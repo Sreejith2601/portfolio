@@ -59,7 +59,7 @@ function App() {
                   <Mail className="w-5 h-5 mr-2" />
                   Email
                 </a>
-                <a href="https://github.com/Rethu21" 
+                <a href="https://github.com/Sreejith2601/" 
                    className="flex items-center text-gray-600 hover:text-purple-600 transition-colors">
                   <Github className="w-5 h-5 mr-2" />
                   GitHub
