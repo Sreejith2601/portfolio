@@ -51,7 +51,7 @@ function App() {
                 About Me
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                I am a passionate MCA student at KCT College of Engineering, with a strong foundation in computer science and a keen interest in software development. I specialize in web development and have experience with various modern technologies.
+                I am a passionate MCA student at Kumaraguru College of Technology, with a strong foundation in computer science and a keen interest in software development. I specialize in web development and have experience with various modern technologies.
               </p>
               <div className="flex space-x-4">
                 <a href="mailto:sreejith.24mca@kct.ac.in" 
