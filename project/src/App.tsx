@@ -96,12 +96,12 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
               <h3 className="text-xl font-semibold text-purple-600 mb-2">Master of Computer Applications</h3>
-              <p className="text-gray-600">KCT College of Engineering</p>
+              <p className="text-gray-600">Kumaraguru College of Technology</p>
               <p className="text-gray-500">2024 - Present</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-purple-600 mb-2">Bachelor's Degree</h3>
-              <p className="text-gray-600">Previous Institution</p>
+              <h3 className="text-xl font-semibold text-purple-600 mb-2">BSc Physics</h3>
+              <p className="text-gray-600">Govt Arts and Science College - Gudalur</p>
               <p className="text-gray-500">2020 - 2023</p>
             </div>
           </div>
