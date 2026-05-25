@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { 
   Mail, 
   Github, 
@@ -18,12 +18,15 @@ import {
   ChevronRight,
   BookOpen,
   CheckCircle2,
-  Heart
+  Heart,
+  Menu,
+  X
 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -50,8 +53,10 @@ function App() {
           <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent tracking-tight">
             Sreejith B
           </h1>
-          <nav>
-            <ul className="flex space-x-4 sm:space-x-6 text-sm sm:text-base font-medium">
+          
+          {/* Desktop Navigation */}
+          <nav className="hidden md:block">
+            <ul className="flex space-x-6 text-base font-medium">
               <li><a href="#about" className="text-slate-600 hover:text-purple-600 transition-colors">About</a></li>
               <li><a href="#experience" className="text-slate-600 hover:text-purple-600 transition-colors">Experience</a></li>
               <li><a href="#projects" className="text-slate-600 hover:text-purple-600 transition-colors">Projects</a></li>
@@ -60,7 +65,64 @@ function App() {
               <li><a href="#contact" className="text-slate-600 hover:text-purple-600 transition-colors">Contact</a></li>
             </ul>
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button 
+            onClick={() => setIsMenuOpen(!isMenuOpen)} 
+            className="md:hidden p-2 rounded-xl hover:bg-slate-100 transition-colors text-slate-600"
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
+
+        {/* Mobile Dropdown Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden border-t border-purple-100 bg-white px-4 py-4 space-y-2 shadow-inner">
+            <a 
+              href="#about" 
+              onClick={() => setIsMenuOpen(false)}
+              className="block px-4 py-2.5 rounded-xl text-slate-700 hover:bg-purple-50 hover:text-purple-600 font-medium transition-colors"
+            >
+              About
+            </a>
+            <a 
+              href="#experience" 
+              onClick={() => setIsMenuOpen(false)}
+              className="block px-4 py-2.5 rounded-xl text-slate-700 hover:bg-purple-50 hover:text-purple-600 font-medium transition-colors"
+            >
+              Experience
+            </a>
+            <a 
+              href="#projects" 
+              onClick={() => setIsMenuOpen(false)}
+              className="block px-4 py-2.5 rounded-xl text-slate-700 hover:bg-purple-50 hover:text-purple-600 font-medium transition-colors"
+            >
+              Projects
+            </a>
+            <a 
+              href="#education" 
+              onClick={() => setIsMenuOpen(false)}
+              className="block px-4 py-2.5 rounded-xl text-slate-700 hover:bg-purple-50 hover:text-purple-600 font-medium transition-colors"
+            >
+              Education
+            </a>
+            <a 
+              href="#skills" 
+              onClick={() => setIsMenuOpen(false)}
+              className="block px-4 py-2.5 rounded-xl text-slate-700 hover:bg-purple-50 hover:text-purple-600 font-medium transition-colors"
+            >
+              Skills
+            </a>
+            <a 
+              href="#contact" 
+              onClick={() => setIsMenuOpen(false)}
+              className="block px-4 py-2.5 rounded-xl text-slate-700 hover:bg-purple-50 hover:text-purple-600 font-medium transition-colors"
+            >
+              Contact
+            </a>
+          </div>
+        )}
       </header>
 
       {/* Hero / About Section */}
@@ -118,7 +180,7 @@ function App() {
                   <img 
                     src="/sreee....jpeg" 
                     alt="Sreejith B"
-                    className="rounded-xl shadow-md transform group-hover:scale-[1.02] transition-transform duration-300 w-[300px] h-[320px] object-cover" 
+                    className="rounded-xl shadow-md transform group-hover:scale-[1.02] transition-transform duration-300 w-[300px] max-w-full h-auto aspect-[300/320] object-cover" 
                   />
                 </div>
               </div>
