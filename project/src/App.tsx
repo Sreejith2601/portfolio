@@ -299,7 +299,13 @@ function App() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-slate-900">Smart Athlete Performance Monitoring & Training System</h3>
-                    <span className="text-xs text-purple-500 font-semibold uppercase tracking-wider">Mobile App & Machine Learning</span>
+                    <div className="flex items-center space-x-3 mt-1">
+                      <span className="text-xs text-purple-500 font-semibold uppercase tracking-wider">Mobile App & Machine Learning</span>
+                      <span className="text-slate-300">|</span>
+                      <a href="https://github.com/Sreejith2601/Smart-Athlete" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs font-semibold text-purple-600 hover:text-pink-600 transition-colors">
+                        <Github className="w-3.5 h-3.5 mr-1" /> GitHub
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <ul className="space-y-3 text-slate-600 mb-6 text-sm leading-relaxed">
