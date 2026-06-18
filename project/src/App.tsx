@@ -288,25 +288,27 @@ function App() {
             </h2>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {/* Project 1 */}
-            <div className="bg-gradient-to-br from-white to-slate-50 p-8 rounded-2xl shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            <div className="bg-gradient-to-br from-white to-slate-50 p-6 rounded-2xl shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
               <div>
                 <div className="flex items-center space-x-3 mb-4">
                   <div className="p-3 bg-purple-50 rounded-xl">
                     <Smartphone className="w-6 h-6 text-purple-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900">Smart Athlete Performance Monitoring & Training System</h3>
-                    <div className="flex items-center space-x-3 mt-1">
-                      <span className="text-xs text-purple-500 font-semibold uppercase tracking-wider">Mobile App & Machine Learning</span>
-                      <span className="text-slate-300">|</span>
-                      <a href="https://github.com/Sreejith2601/Smart-Athlete" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs font-semibold text-purple-600 hover:text-pink-600 transition-colors">
-                        <Github className="w-3.5 h-3.5 mr-1" /> GitHub
-                      </a>
-                    </div>
+                    <h3 className="text-lg font-bold text-slate-900 leading-tight">Smart Athlete Performance Monitoring & Training System</h3>
+                    <span className="text-xs text-purple-500 font-semibold uppercase tracking-wider block mt-1">Mobile App & Machine Learning</span>
                   </div>
+                </div>
+                <div className="flex flex-wrap items-center gap-4 mb-4 text-xs">
+                  <a href="https://github.com/Sreejith2601/Smart-Athlete/tree/main/frontend" target="_blank" rel="noopener noreferrer" className="inline-flex items-center font-semibold text-purple-600 hover:text-pink-600 transition-colors">
+                    <Github className="w-3.5 h-3.5 mr-1" /> Git Frontend
+                  </a>
+                  <a href="https://github.com/Sreejith2601/Smart-Athlete/tree/main/backend" target="_blank" rel="noopener noreferrer" className="inline-flex items-center font-semibold text-purple-600 hover:text-pink-600 transition-colors">
+                    <Github className="w-3.5 h-3.5 mr-1" /> Git Backend
+                  </a>
                 </div>
                 <ul className="space-y-3 text-slate-600 mb-6 text-sm leading-relaxed">
                   <li className="flex items-start">
@@ -334,53 +336,27 @@ function App() {
             </div>
 
             {/* Project 2 */}
-            <div className="bg-gradient-to-br from-white to-slate-50 p-8 rounded-2xl shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-              <div>
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="p-3 bg-purple-50 rounded-xl">
-                    <Cpu className="w-6 h-6 text-purple-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-900">Wildlife Intrusion Detection System</h3>
-                    <span className="text-xs text-purple-500 font-semibold uppercase tracking-wider">IoT & Hardware System</span>
-                  </div>
-                </div>
-                <ul className="space-y-3 text-slate-600 mb-6 text-sm leading-relaxed">
-                  <li className="flex items-start">
-                    <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-2 shrink-0"></span>
-                    <span>Developed a wildlife intrusion detection system using IR and heat-sensing sensors to identify potentially dangerous animals entering human-populated zones, achieving 75% detection accuracy.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-2 shrink-0"></span>
-                    <span>Designed the system to send real-time alerts to people in the surrounding area based on sensor output, enhancing community safety and reducing human-wildlife conflict.</span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <div className="border-t border-slate-200/60 pt-4">
-                  <h4 className="text-xs font-bold text-slate-500 uppercase mb-2">Tech Stack</h4>
-                  <div className="flex flex-wrap gap-1.5">
-                    {['Arduino Uno', 'Embedded C', 'PIR Sensor', 'Heat Sensor', 'GSM Module', 'Serial/GPIO'].map((tech) => (
-                      <span key={tech} className="px-2 py-0.5 text-xs font-semibold text-slate-700 bg-slate-200/60 rounded">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Project 3 */}
-            <div className="bg-gradient-to-br from-white to-slate-50 p-8 rounded-2xl shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            <div className="bg-gradient-to-br from-white to-slate-50 p-6 rounded-2xl shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
               <div>
                 <div className="flex items-center space-x-3 mb-4">
                   <div className="p-3 bg-purple-50 rounded-xl">
                     <BookOpen className="w-6 h-6 text-purple-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900">Blogify – Full Stack Blogging Platform</h3>
-                    <span className="text-xs text-purple-500 font-semibold uppercase tracking-wider">Web Application</span>
+                    <h3 className="text-lg font-bold text-slate-900 leading-tight">Blogify – Full Stack Blogging Platform</h3>
+                    <span className="text-xs text-purple-500 font-semibold uppercase tracking-wider block mt-1">Web Application</span>
                   </div>
+                </div>
+                <div className="flex flex-wrap items-center gap-4 mb-4 text-xs">
+                  <a href="https://github.com/Sreejith2601/blogify/tree/main/Frontend" target="_blank" rel="noopener noreferrer" className="inline-flex items-center font-semibold text-purple-600 hover:text-pink-600 transition-colors">
+                    <Github className="w-3.5 h-3.5 mr-1" /> Git Frontend
+                  </a>
+                  <a href="https://github.com/Sreejith2601/blogify/tree/main/backend" target="_blank" rel="noopener noreferrer" className="inline-flex items-center font-semibold text-purple-600 hover:text-pink-600 transition-colors">
+                    <Github className="w-3.5 h-3.5 mr-1" /> Git Backend
+                  </a>
+                  <a href="https://blo-gi-fy.netlify.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center font-semibold text-purple-600 hover:text-pink-600 transition-colors">
+                    <ExternalLink className="w-3.5 h-3.5 mr-1" /> Live Demo
+                  </a>
                 </div>
                 <ul className="space-y-3 text-slate-600 mb-6 text-sm leading-relaxed">
                   <li className="flex items-start">
@@ -398,6 +374,54 @@ function App() {
                   <h4 className="text-xs font-bold text-slate-500 uppercase mb-2">Tech Stack</h4>
                   <div className="flex flex-wrap gap-1.5">
                     {['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Git', 'REST APIs'].map((tech) => (
+                      <span key={tech} className="px-2 py-0.5 text-xs font-semibold text-slate-700 bg-slate-200/60 rounded">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className="bg-gradient-to-br from-white to-slate-50 p-6 rounded-2xl shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="p-3 bg-purple-50 rounded-xl">
+                    <Briefcase className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-slate-900 leading-tight">Interior Design Consultancy Website</h3>
+                    <span className="text-xs text-purple-500 font-semibold uppercase tracking-wider block mt-1">Web Platform</span>
+                  </div>
+                </div>
+                <div className="flex flex-wrap items-center gap-4 mb-4 text-xs">
+                  <a href="https://github.com/Sreejith2601/inside-frontend" target="_blank" rel="noopener noreferrer" className="inline-flex items-center font-semibold text-purple-600 hover:text-pink-600 transition-colors">
+                    <Github className="w-3.5 h-3.5 mr-1" /> Git Frontend
+                  </a>
+                  <a href="https://github.com/Sreejith2601/inside-backend" target="_blank" rel="noopener noreferrer" className="inline-flex items-center font-semibold text-purple-600 hover:text-pink-600 transition-colors">
+                    <Github className="w-3.5 h-3.5 mr-1" /> Git Backend
+                  </a>
+                  <a href="https://www.inside-joshanagroups.in/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center font-semibold text-purple-600 hover:text-pink-600 transition-colors">
+                    <ExternalLink className="w-3.5 h-3.5 mr-1" /> Live Demo
+                  </a>
+                </div>
+                <ul className="space-y-3 text-slate-600 mb-6 text-sm leading-relaxed">
+                  <li className="flex items-start">
+                    <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-2 shrink-0"></span>
+                    <span>Developed a fully functional MERN stack web platform for an interior design consultancy featuring an interactive portfolio carousel, booking system, CMS, admin dashboard, and secure JWT authentication.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-2 shrink-0"></span>
+                    <span>Built and optimized scalable REST APIs and dynamic front-end modules, improving performance and user engagement, resulting in a noticeable increase in online lead enquiries.</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div className="border-t border-slate-200/60 pt-4">
+                  <h4 className="text-xs font-bold text-slate-500 uppercase mb-2">Tech Stack</h4>
+                  <div className="flex flex-wrap gap-1.5">
+                    {['MERN Stack', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'CMS'].map((tech) => (
                       <span key={tech} className="px-2 py-0.5 text-xs font-semibold text-slate-700 bg-slate-200/60 rounded">
                         {tech}
                       </span>
