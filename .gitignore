@@ -1,6 +1,5 @@
 # Ignore duplicate folder
 portfolio-main/
-
 # Standard Ignores
 node_modules/
 dist/
