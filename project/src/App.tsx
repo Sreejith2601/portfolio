@@ -313,7 +313,7 @@ function App() {
                 <ul className="space-y-3 text-slate-600 mb-6 text-sm leading-relaxed">
                   <li className="flex items-start">
                     <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-2 shrink-0"></span>
-                    <span>Built a React.js athlete performance tracking web platform that streamlined training, nutrition, and biometric monitoring through centralized real-time analytics.</span>
+                    <span>Built a Athlete performance tracking web platform that streamlined training, nutrition, and biometric monitoring through centralized real-time analytics.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-2 shrink-0"></span>
