@@ -295,11 +295,11 @@ function App() {
               <div>
                 <div className="flex items-center space-x-3 mb-4">
                   <div className="p-3 bg-purple-50 rounded-xl">
-                    <Smartphone className="w-6 h-6 text-purple-600" />
+                    <Globe className="w-6 h-6 text-purple-600" />
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 leading-tight">Smart Athlete Performance Monitoring & Training System</h3>
-                    <span className="text-xs text-purple-500 font-semibold uppercase tracking-wider block mt-1">Mobile App & Machine Learning</span>
+                    <span className="text-xs text-purple-500 font-semibold uppercase tracking-wider block mt-1">Web Application & Machine Learning</span>
                   </div>
                 </div>
                 <div className="flex flex-wrap items-center gap-4 mb-4 text-xs">
@@ -313,7 +313,7 @@ function App() {
                 <ul className="space-y-3 text-slate-600 mb-6 text-sm leading-relaxed">
                   <li className="flex items-start">
                     <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-2 shrink-0"></span>
-                    <span>Built a React Native athlete performance tracking app that streamlined training, nutrition, and biometric monitoring through centralized real-time analytics.</span>
+                    <span>Built a React.js athlete performance tracking web platform that streamlined training, nutrition, and biometric monitoring through centralized real-time analytics.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-2 shrink-0"></span>
@@ -325,7 +325,7 @@ function App() {
                 <div className="border-t border-slate-200/60 pt-4">
                   <h4 className="text-xs font-bold text-slate-500 uppercase mb-2">Tech Stack</h4>
                   <div className="flex flex-wrap gap-1.5">
-                    {['React Native', 'Node.js', 'Express.js', 'MongoDB', 'Random Forest (ML)', 'JWT'].map((tech) => (
+                    {['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Random Forest (ML)', 'JWT'].map((tech) => (
                       <span key={tech} className="px-2 py-0.5 text-xs font-semibold text-slate-700 bg-slate-200/60 rounded">
                         {tech}
                       </span>
