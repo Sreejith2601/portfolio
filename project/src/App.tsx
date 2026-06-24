@@ -309,6 +309,9 @@ function App() {
                   <a href="https://github.com/Sreejith2601/Smart-Athlete/tree/main/backend" target="_blank" rel="noopener noreferrer" className="inline-flex items-center font-semibold text-purple-600 hover:text-pink-600 transition-colors">
                     <Github className="w-3.5 h-3.5 mr-1" /> Git Backend
                   </a>
+                  <a href="https://smart-athlete.netlify.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center font-semibold text-purple-600 hover:text-pink-600 transition-colors">
+                    <ExternalLink className="w-3.5 h-3.5 mr-1" /> Live Demo
+                  </a>
                 </div>
                 <ul className="space-y-3 text-slate-600 mb-6 text-sm leading-relaxed">
                   <li className="flex items-start">
