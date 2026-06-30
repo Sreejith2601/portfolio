@@ -27,6 +27,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showProj3Tech, setShowProj3Tech] = useState(false);
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -394,8 +395,8 @@ function App() {
                     <Briefcase className="w-6 h-6 text-purple-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-slate-900 leading-tight">Interior Design Consultancy Website</h3>
-                    <span className="text-xs text-purple-500 font-semibold uppercase tracking-wider block mt-1">Web Platform</span>
+                    <h3 className="text-lg font-bold text-slate-900 leading-tight">Inside – Full-Stack Interior Design Platform & CMS</h3>
+                    <span className="text-xs text-purple-500 font-semibold uppercase tracking-wider block mt-1">Full-Stack Web Application & CMS</span>
                   </div>
                 </div>
                 <div className="flex flex-wrap items-center gap-4 mb-4 text-xs">
@@ -409,16 +410,48 @@ function App() {
                     <ExternalLink className="w-3.5 h-3.5 mr-1" /> Live Demo
                   </a>
                 </div>
-                <ul className="space-y-3 text-slate-600 mb-6 text-sm leading-relaxed">
+                <ul className="space-y-3 text-slate-600 mb-4 text-sm leading-relaxed">
                   <li className="flex items-start">
                     <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-2 shrink-0"></span>
-                    <span>Developed a fully functional MERN stack web platform for an interior design consultancy featuring an interactive portfolio carousel, booking system, CMS, admin dashboard, and secure JWT authentication.</span>
+                    <span>Engineered a secure role-based CMS Admin Dashboard to perform full CRUD operations on portfolio media, client bookings, and dynamic consultancy pages.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-2 shrink-0"></span>
-                    <span>Built and optimized scalable REST APIs and dynamic front-end modules, improving performance and user engagement, resulting in a noticeable increase in online lead enquiries.</span>
+                    <span>Designed a scalable RESTful API with Node.js & Express, securing routes using custom JWT authentication middleware and password hashing (bcrypt).</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 mr-2 shrink-0"></span>
+                    <span>Implemented structured MongoDB schemas to handle relational-like data models for inquiries, booking schedules, and project categories.</span>
                   </li>
                 </ul>
+
+                {/* Collapsible Detailed Architecture */}
+                <div className="mb-6">
+                  <button
+                    onClick={() => setShowProj3Tech(!showProj3Tech)}
+                    className="inline-flex items-center text-xs font-bold text-purple-600 hover:text-pink-600 transition-colors focus:outline-none"
+                  >
+                    <ChevronRight className={`w-3.5 h-3.5 mr-1 transform transition-transform duration-200 ${showProj3Tech ? 'rotate-90' : ''}`} />
+                    {showProj3Tech ? 'Hide Full-Stack Architecture' : 'View Full-Stack Architecture'}
+                  </button>
+                  
+                  {showProj3Tech && (
+                    <div className="mt-3 p-3.5 bg-purple-50/50 rounded-xl border border-purple-100/50 text-xs text-slate-600 space-y-2.5 transition-all duration-300 ease-in-out">
+                      <div>
+                        <strong className="text-purple-700 block font-semibold mb-0.5">Database & Storage</strong>
+                        Modeled robust Mongoose schemas for bookings, portfolios, and admin accounts, optimizing querying performance.
+                      </div>
+                      <div>
+                        <strong className="text-purple-700 block font-semibold mb-0.5">Backend Service</strong>
+                        Developed modular Express.js controllers/routes, centralized error handling, and secure CORS/helmet policy integrations.
+                      </div>
+                      <div>
+                        <strong className="text-purple-700 block font-semibold mb-0.5">Security & Session Management</strong>
+                        Enforced token-based authorization via HTTP-only cookies/JWTs, protecting administrative endpoints from unauthorized access.
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
               <div>
                 <div className="border-t border-slate-200/60 pt-4">
